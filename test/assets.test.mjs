@@ -42,6 +42,23 @@ test('hidden attribute wins over component display rules (Start button hides aft
   assert.match(css, /\[hidden\]\s*\{\s*display:\s*none\s*!important/);
 });
 
+test('red buttons meet WCAG AA contrast (4.5:1) for their text', () => {
+  const css = readFileSync(join(pub, 'css/site.css'), 'utf8');
+  const vars = Object.fromEntries([...css.matchAll(/--([\w-]+):\s*(#[0-9A-Fa-f]{6})/g)].map((m) => [m[1], m[2]]));
+  const rule = css.match(/\.btn-red \{([^}]*)\}/)[1];
+  const val = (prop) => { const v = rule.match(new RegExp(`${prop}:\\s*([^;]+)`))[1].trim(); return v.startsWith('var') ? vars[v.slice(6, -1)] : v; };
+  const lum = (hex) => {
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((c) => (c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4));
+    return .2126 * r + .7152 * g + .0722 * b;
+  };
+  const [a, b] = [lum(val('background')), lum(val('color') === '#fff' ? '#ffffff' : val('color'))].sort((x, y) => y - x);
+  assert.ok((a + .05) / (b + .05) >= 4.5, `ratio ${((a + .05) / (b + .05)).toFixed(2)}`);
+});
+
+test('no Vercel insights script until Web Analytics is enabled (it 404s)', () => {
+  for (const h of html) assert.ok(!h.includes('/_vercel/insights/'));
+});
+
 test('stylesheet defines the app palette', () => {
   const css = readFileSync(join(pub, 'css/site.css'), 'utf8');
   for (const c of ['#050608', '#0F1115', '#2A2D33', '#FF3B30', '#E6E8EC']) assert.ok(css.includes(c), c);

@@ -43,7 +43,6 @@ ${storeBadges()}
 <p class="muted">© ${new Date().getFullYear()} SuperRev</p>
 </footer>
 ${demo ? '<script type="module" src="/js/demo.js"></script>' : ''}
-<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 `;

@@ -36,8 +36,8 @@ h3 { font-size: 1.3rem; margin: 0 0 .4em; }
 
 /* buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 999px; padding: 14px 28px; font: 700 1rem var(--body); cursor: pointer; text-decoration: none; }
-.btn-red { background: var(--red); color: #fff; box-shadow: 0 0 24px rgba(255, 59, 48, .45); }
-.btn-red:hover { background: var(--red-deep); color: #fff; }
+.btn-red { background: var(--red-deep); color: #fff; box-shadow: 0 0 24px rgba(255, 59, 48, .45); }
+.btn-red:hover { background: #A81B13; color: #fff; }
 .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--outline); }
 .btn-small { padding: 8px 16px; font-size: .9rem; }
 :focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
