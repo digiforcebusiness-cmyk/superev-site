@@ -72,7 +72,7 @@ select, .filter { width: 100%; background: var(--raised); color: var(--text); bo
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
 .features article, .cat-grid a, .car-grid a { background: var(--surface); border: 1px solid var(--outline); border-radius: var(--radius); padding: 18px; }
 .features p { color: var(--muted); margin: 0; }
-.shots { display: flex; gap: 16px; overflow-x: auto; padding: 24px 0 8px; scroll-snap-type: x mandatory; }
+.shots { display: flex; justify-content: safe center; gap: 16px; overflow-x: auto; padding: 24px 0 8px; scroll-snap-type: x mandatory; }
 .shots img { flex: 0 0 auto; width: 240px; border-radius: 18px; border: 1px solid var(--outline); scroll-snap-align: center; }
 .cat-grid, .car-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
 .cat-grid a, .car-grid a { display: grid; gap: 4px; text-decoration: none; height: 100%; }
