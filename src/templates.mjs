@@ -9,8 +9,8 @@ const demoCar = (c) => JSON.stringify({ id: c.id, name: c.name, idle: c.idle, re
 
 export function storeBadges(cls = '') {
   return `<div class="badges ${cls}">
-<a class="badge" href="${esc(IOS_URL)}" rel="noopener"><img src="/img/app-store-badge.svg" alt="Download on the App Store" width="135" height="40"></a>
-<a class="badge" href="${esc(PLAY_URL)}" rel="noopener"><img src="/img/google-play-badge.png" alt="Get it on Google Play" width="135" height="40"></a>
+<a class="badge" href="${esc(IOS_URL)}" rel="noopener"><img src="/img/app-store-badge.svg" alt="Download on the App Store" width="120" height="40"></a>
+<a class="badge" href="${esc(PLAY_URL)}" rel="noopener"><img src="/img/google-play-badge.png" alt="Get it on Google Play" width="134" height="40"></a>
 </div>`;
 }
 
@@ -25,7 +25,6 @@ ${metaTags({ title, description, path })}
 <meta name="apple-itunes-app" content="app-id=6770043689">
 <link rel="icon" href="/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preload" href="/fonts/display.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/site.css">
 ${extraHead}${schemas.map(jsonLd).join('\n')}
 </head>
@@ -91,9 +90,9 @@ function appSection(count) {
 <article><h3>Works offline</h3><p>No account and no connection needed. Open it, pick an engine, drive.</p></article>
 </div>
 <div class="shots">
-<img src="/img/screen-1.webp" alt="SuperRev dashboard with tachometer and engine picker" width="300" height="650" loading="lazy">
-<img src="/img/screen-2.webp" alt="SuperRev engine library" width="300" height="650" loading="lazy">
-<img src="/img/screen-3.webp" alt="SuperRev GPS driving mode" width="300" height="650" loading="lazy">
+<img src="/img/screen-1.webp" alt="SuperRev dashboard with tachometer and engine picker" width="300" height="649" loading="lazy">
+<img src="/img/screen-2.webp" alt="SuperRev engine library" width="300" height="649" loading="lazy">
+<img src="/img/screen-3.webp" alt="SuperRev GPS driving mode" width="300" height="649" loading="lazy">
 </div>
 ${storeBadges('badges-large')}
 </section>`;

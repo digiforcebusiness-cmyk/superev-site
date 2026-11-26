@@ -59,7 +59,7 @@ function mount(root) {
   for (const ev of ['pointerup', 'pointercancel', 'lostpointercapture']) pedal.addEventListener(ev, () => press(0));
   pedal.addEventListener('contextmenu', (e) => e.preventDefault());
   window.addEventListener('keydown', (e) => {
-    if (e.code !== 'Space' || e.repeat || !engine || e.target.closest('input,select,textarea')) return;
+    if (e.code !== 'Space' || e.repeat || !engine || e.target.closest?.('input,select,textarea')) return;
     e.preventDefault(); press(1);
   });
   window.addEventListener('keyup', (e) => { if (e.code === 'Space') press(0); });
