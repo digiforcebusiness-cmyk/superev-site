@@ -102,11 +102,12 @@ const carCard = (c) => `<li><a href="/cars/${c.slug}/"><strong>${esc(c.name)}</s
 
 export function home({ cars, categories }) {
   const featured = cars.find((c) => c.id === 'ferrari_458_italia') ?? cars[0];
-  const body = `<section class="hero">
+  const body = `<div class="stage"><section class="hero">
 <h1>Rev any engine. <span>Then take it for a drive.</span></h1>
 <p class="lead">${cars.length} real engine sounds, from V8 muscle to V12 hypercars. Rev them right here, then let the SuperRev app turn your phone into your car's soundtrack with GPS mode and acceleration sync.</p>
+${storeBadges()}
 </section>
-${demoBlock(featured, { cars, categories })}
+${demoBlock(featured, { cars, categories })}</div>
 ${appSection(cars.length)}
 <section class="categories"><h2>Browse engines</h2><ul class="cat-grid">
 ${categories.map((cat) => `<li><a href="/cars/${cat.slug}/"><strong>${esc(cat.name)}</strong><span>${cars.filter((c) => c.category === cat.name).length} engines</span></a></li>`).join('\n')}
@@ -161,11 +162,12 @@ export function carPage({ car, cat, cars }) {
   const similar = [...peers.slice(at), ...peers.slice(0, at)].slice(0, 6);
   const faq = carFaq(car);
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/cars/">Engines</a> / <a href="/cars/${cat.slug}/">${esc(cat.name)}</a> / <span>${esc(car.name)}</span></nav>
-<section class="car-hero">
+<div class="stage"><section class="car-hero">
 <h1>${esc(car.name)} engine sound</h1>
 <p class="spec">${esc(car.engine ?? 'SuperRev signature engine')} · idle ${fmt(car.idle)} rpm · redline ${fmt(car.redline)} rpm</p>
+${storeBadges()}
 </section>
-${demoBlock(car)}
+${demoBlock(car)}</div>
 <section class="about">${carParagraphs(car, cat).map((p) => `<p>${esc(p)}</p>`).join('\n')}</section>
 ${appSection(cars.length)}
 <section class="similar" data-similar><h2>Similar engines</h2><ul class="car-grid">${similar.map(carCard).join('\n')}</ul>

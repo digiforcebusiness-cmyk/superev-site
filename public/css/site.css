@@ -4,7 +4,7 @@
   --red: #FF3B30; --red-deep: #C8231A; --text: #E6E8EC; --muted: #8A909A;
   --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
   --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --radius: 14px; --max: 1080px;
+  --radius: 14px; --max: 1200px;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -48,7 +48,7 @@ h3 { font-size: 1.3rem; margin: 0 0 .4em; }
 /* demo */
 .demo { position: relative; background: var(--surface); border: 1px solid var(--outline); border-radius: 24px; padding: 20px; margin: 24px auto; max-width: 560px; text-align: center; }
 .dash { display: grid; justify-items: center; gap: 8px; }
-.tach { width: min(300px, 78vw); height: min(300px, 78vw); }
+.tach { width: min(300px, 78vw, 32vh); height: min(300px, 78vw, 32vh); }
 .readouts { display: flex; gap: 40px; }
 .readouts div { display: grid; }
 .readouts span { font: 800 2.2rem/1 var(--display); font-variant-numeric: tabular-nums; }
@@ -90,7 +90,28 @@ select, .filter { width: 100%; background: var(--raised); color: var(--text); bo
 .cat-section h2 a { text-decoration: none; }
 .disclaimer { margin-top: 32px; }
 
+/* First screen: headline + engine console, Start visible without scrolling.
+   Phones: headline, console, then the intro. Wide screens: text left, console right. */
+.stage { display: flex; flex-direction: column; }
+.stage .hero { display: contents; }
+.stage .hero > :not(h1) { order: 1; }
+@media (max-width: 899px) { .car-hero .badges { display: none; } }
+@media (min-width: 900px) {
+  .stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 520px); gap: 56px; align-items: center; }
+  .stage .hero { display: block; text-align: left; padding-top: 0; }
+  .stage .hero .lead { margin: 0; }
+  .stage .badges { justify-content: flex-start; }
+  .stage .car-hero { text-align: left; }
+  .stage .demo { margin: 0; width: 100%; }
+}
+
 @media (max-width: 480px) {
+  .demo { margin: 12px auto; padding: 14px; }
+  .dash { grid-template-columns: auto auto; justify-content: center; align-items: center; gap: 14px; }
+  .readouts { flex-direction: column; gap: 14px; }
+  .tach { width: min(56vw, 32vh); height: min(56vw, 32vh); }
+  .views { margin: 12px 0; }
+  .picker { margin-top: 10px; }
   .views button { font-size: .62rem; }
   .site-header nav a:not(.btn) { display: none; }
 }

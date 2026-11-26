@@ -53,6 +53,7 @@ function mount(root) {
   /** One button: Start engine ↔ Stop engine. */
   function running(on) {
     pedal.hidden = !on;
+    if (on) pedal.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     pedal.classList.remove('is-down');
     startBtn.textContent = on ? 'Stop engine' : 'Start engine';
     startBtn.classList.toggle('btn-red', !on);
