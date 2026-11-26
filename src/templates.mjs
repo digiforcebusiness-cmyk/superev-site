@@ -89,9 +89,10 @@ function appSection(count) {
 <article><h3>Works offline</h3><p>No account and no connection needed. Open it, pick an engine, drive.</p></article>
 </div>
 <div class="shots">
-<img src="/img/screen-1.webp" alt="SuperRev dashboard with tachometer and engine picker" width="300" height="649" loading="lazy">
-<img src="/img/screen-2.webp" alt="SuperRev engine library" width="300" height="649" loading="lazy">
-<img src="/img/screen-3.webp" alt="SuperRev GPS driving mode" width="300" height="649" loading="lazy">
+<img src="/img/screen-1.webp" alt="Place your phone in the car: SuperRev plays through your car stereo over Bluetooth" width="300" height="649" loading="lazy">
+<img src="/img/screen-2.webp" alt="Sounds that follow you: the engine responds as you accelerate, in real time" width="300" height="649" loading="lazy">
+<img src="/img/screen-3.webp" alt="Choose your favorite engine, from legendary V8s to exotic supercars" width="300" height="649" loading="lazy">
+<img src="/img/screen-4.webp" alt="Made for car enthusiasts: SuperRev tachometer on the dashboard" width="300" height="649" loading="lazy">
 </div>
 ${storeBadges('badges-large')}
 </section>`;

@@ -31,6 +31,11 @@ test('every <img> has alt, width and height, and its file exists', () => {
   }
 });
 
+test('app section shows all 4 phone screenshots in order', () => {
+  const shots = [...html[0].matchAll(/src="\/img\/(screen-\d)\.webp"/g)].map((m) => m[1]);
+  assert.deepEqual(shots, ['screen-1', 'screen-2', 'screen-3', 'screen-4']);
+});
+
 test('icons and the share image exist at the right sizes', () => {
   assert.deepEqual(pngSize(join(pub, 'img/og.png')), [1200, 630]);
   assert.deepEqual(pngSize(join(pub, 'img/apple-touch-icon.png')), [180, 180]);
