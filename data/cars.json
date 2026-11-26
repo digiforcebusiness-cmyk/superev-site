@@ -1,0 +1,1190 @@
+[
+ {
+  "id": "rotary_x8",
+  "name": "Rotary X8",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 850,
+  "redline": 9000,
+  "slug": "rotary-x8"
+ },
+ {
+  "id": "i6_german",
+  "name": "German Inline-6",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 720,
+  "redline": 7000,
+  "slug": "german-inline-6"
+ },
+ {
+  "id": "street_rumble",
+  "name": "Street Rumble",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "street-rumble"
+ },
+ {
+  "id": "deep_burble",
+  "name": "Deep Burble",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 700,
+  "redline": 6000,
+  "slug": "deep-burble"
+ },
+ {
+  "id": "sport_growl",
+  "name": "Sport Growl",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 850,
+  "redline": 7200,
+  "slug": "sport-growl"
+ },
+ {
+  "id": "raw_power",
+  "name": "Raw Power",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 900,
+  "redline": 7500,
+  "slug": "raw-power"
+ },
+ {
+  "id": "rally_roar",
+  "name": "Rally Roar",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 950,
+  "redline": 8000,
+  "slug": "rally-roar"
+ },
+ {
+  "id": "track_howl",
+  "name": "Track Howl",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1000,
+  "redline": 8500,
+  "slug": "track-howl"
+ },
+ {
+  "id": "low_rumble",
+  "name": "Low Rumble",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 650,
+  "redline": 5800,
+  "slug": "low-rumble"
+ },
+ {
+  "id": "raspy_racer",
+  "name": "Raspy Racer",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1100,
+  "redline": 9000,
+  "slug": "raspy-racer"
+ },
+ {
+  "id": "road_thunder",
+  "name": "Road Thunder",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 800,
+  "redline": 7000,
+  "slug": "road-thunder"
+ },
+ {
+  "id": "high_rev",
+  "name": "High Rev",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1200,
+  "redline": 9500,
+  "slug": "high-rev"
+ },
+ {
+  "id": "crossplane_eight",
+  "name": "Crossplane Eight",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 750,
+  "redline": 6800,
+  "slug": "crossplane-eight"
+ },
+ {
+  "id": "flatplane_eight",
+  "name": "Flatplane Eight",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1000,
+  "redline": 9000,
+  "slug": "flatplane-eight"
+ },
+ {
+  "id": "boxer_four",
+  "name": "Boxer Four",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 800,
+  "redline": 7200,
+  "slug": "boxer-four"
+ },
+ {
+  "id": "flat_six",
+  "name": "Flat Six",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 850,
+  "redline": 8200,
+  "slug": "flat-six"
+ },
+ {
+  "id": "inline_five",
+  "name": "Inline Five",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 850,
+  "redline": 7200,
+  "slug": "inline-five"
+ },
+ {
+  "id": "big_block",
+  "name": "Big Block",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 650,
+  "redline": 5800,
+  "slug": "big-block"
+ },
+ {
+  "id": "sport_ten",
+  "name": "Sport Ten",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "sport-ten"
+ },
+ {
+  "id": "grand_twelve",
+  "name": "Grand Twelve",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 750,
+  "redline": 7800,
+  "slug": "grand-twelve"
+ },
+ {
+  "id": "turbo_four",
+  "name": "Turbo Four",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 850,
+  "redline": 7000,
+  "slug": "turbo-four"
+ },
+ {
+  "id": "diesel_six",
+  "name": "Diesel Six",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 650,
+  "redline": 4500,
+  "slug": "diesel-six"
+ },
+ {
+  "id": "rally_five",
+  "name": "Rally Five",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1000,
+  "redline": 7800,
+  "slug": "rally-five"
+ },
+ {
+  "id": "race_six",
+  "name": "Race Six",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1100,
+  "redline": 9000,
+  "slug": "race-six"
+ },
+ {
+  "id": "screaming_ten",
+  "name": "Screaming Ten",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1400,
+  "redline": 11000,
+  "slug": "screaming-ten"
+ },
+ {
+  "id": "classic_eight",
+  "name": "Classic Eight",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 700,
+  "redline": 6200,
+  "slug": "classic-eight"
+ },
+ {
+  "id": "hot_hatch",
+  "name": "Hot Hatch",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 900,
+  "redline": 7500,
+  "slug": "hot-hatch"
+ },
+ {
+  "id": "sport_twin",
+  "name": "Sport Twin",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1100,
+  "redline": 9500,
+  "slug": "sport-twin"
+ },
+ {
+  "id": "sport_triple",
+  "name": "Sport Triple",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1200,
+  "redline": 10500,
+  "slug": "sport-triple"
+ },
+ {
+  "id": "supercharged_eight",
+  "name": "Blown Eight",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 850,
+  "redline": 7200,
+  "slug": "blown-eight"
+ },
+ {
+  "id": "endurance_twelve",
+  "name": "Endurance Twelve",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 1100,
+  "redline": 9500,
+  "slug": "endurance-twelve"
+ },
+ {
+  "id": "touring_six",
+  "name": "Touring Six",
+  "engine": null,
+  "category": "Signature Sounds",
+  "idle": 800,
+  "redline": 7600,
+  "slug": "touring-six"
+ },
+ {
+  "id": "lexus_lfa",
+  "name": "Lexus LFA",
+  "engine": "4.8L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "lexus-lfa"
+ },
+ {
+  "id": "porsche_carrera_gt",
+  "name": "Porsche Carrera GT",
+  "engine": "5.7L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8400,
+  "slug": "porsche-carrera-gt"
+ },
+ {
+  "id": "lamborghini_gallardo_superleggera",
+  "name": "Lamborghini Gallardo Superleggera",
+  "engine": "5.0L V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8200,
+  "slug": "lamborghini-gallardo-superleggera"
+ },
+ {
+  "id": "lamborghini_huracan_performante",
+  "name": "Lamborghini Huracán Performante",
+  "engine": "5.2L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "lamborghini-huracan-performante"
+ },
+ {
+  "id": "lamborghini_huracan_sto",
+  "name": "Lamborghini Huracán STO",
+  "engine": "5.2L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "lamborghini-huracan-sto"
+ },
+ {
+  "id": "audi_r8_v10_plus",
+  "name": "Audi R8 V10 Plus",
+  "engine": "5.2L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8700,
+  "slug": "audi-r8-v10-plus"
+ },
+ {
+  "id": "audi_r8_gt_rwd",
+  "name": "Audi R8 GT RWD",
+  "engine": "5.2L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8700,
+  "slug": "audi-r8-gt-rwd"
+ },
+ {
+  "id": "bmw_m5_e60",
+  "name": "BMW M5 E60",
+  "engine": "5.0L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8250,
+  "slug": "bmw-m5-e60"
+ },
+ {
+  "id": "bmw_m6_e63",
+  "name": "BMW M6 E63",
+  "engine": "5.0L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 900,
+  "redline": 8250,
+  "slug": "bmw-m6-e63"
+ },
+ {
+  "id": "dodge_viper_acr",
+  "name": "Dodge Viper ACR",
+  "engine": "8.4L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 750,
+  "redline": 6400,
+  "slug": "dodge-viper-acr"
+ },
+ {
+  "id": "volkswagen_touareg_r50",
+  "name": "Volkswagen Touareg R50",
+  "engine": "5.0L Twin-Turbo Diesel V10",
+  "category": "Legendary V10",
+  "idle": 700,
+  "redline": 4500,
+  "slug": "volkswagen-touareg-r50"
+ },
+ {
+  "id": "audi_s8_d3",
+  "name": "Audi S8 D3",
+  "engine": "5.2L Naturally Aspirated V10",
+  "category": "Legendary V10",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "audi-s8-d3"
+ },
+ {
+  "id": "ferrari_f12berlinetta",
+  "name": "Ferrari F12berlinetta",
+  "engine": "6.3L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8700,
+  "slug": "ferrari-f12berlinetta"
+ },
+ {
+  "id": "ferrari_812_superfast",
+  "name": "Ferrari 812 Superfast",
+  "engine": "6.5L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8900,
+  "slug": "ferrari-812-superfast"
+ },
+ {
+  "id": "ferrari_812_competizione",
+  "name": "Ferrari 812 Competizione",
+  "engine": "6.5L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 1100,
+  "redline": 9500,
+  "slug": "ferrari-812-competizione"
+ },
+ {
+  "id": "ferrari_f50",
+  "name": "Ferrari F50",
+  "engine": "4.7L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "ferrari-f50"
+ },
+ {
+  "id": "ferrari_enzo",
+  "name": "Ferrari Enzo",
+  "engine": "6.0L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8200,
+  "slug": "ferrari-enzo"
+ },
+ {
+  "id": "ferrari_laferrari",
+  "name": "Ferrari LaFerrari",
+  "engine": "6.3L Naturally Aspirated V12 Hybrid",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 9250,
+  "slug": "ferrari-laferrari"
+ },
+ {
+  "id": "ferrari_599_gto",
+  "name": "Ferrari 599 GTO",
+  "engine": "6.0L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8400,
+  "slug": "ferrari-599-gto"
+ },
+ {
+  "id": "lamborghini_aventador_svj",
+  "name": "Lamborghini Aventador SVJ",
+  "engine": "6.5L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8700,
+  "slug": "lamborghini-aventador-svj"
+ },
+ {
+  "id": "lamborghini_murcielago_lp670_4_sv",
+  "name": "Lamborghini Murciélago LP670-4 SV",
+  "engine": "6.5L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "lamborghini-murcielago-lp670-4-sv"
+ },
+ {
+  "id": "lamborghini_diablo_sv",
+  "name": "Lamborghini Diablo SV",
+  "engine": "5.7L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "lamborghini-diablo-sv"
+ },
+ {
+  "id": "lamborghini_countach_5000_qv",
+  "name": "Lamborghini Countach 5000 QV",
+  "engine": "5.2L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "lamborghini-countach-5000-qv"
+ },
+ {
+  "id": "pagani_zonda_cinque",
+  "name": "Pagani Zonda Cinque",
+  "engine": "7.3L AMG Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "pagani-zonda-cinque"
+ },
+ {
+  "id": "pagani_zonda_revolucion",
+  "name": "Pagani Zonda Revolución",
+  "engine": "6.0L AMG Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "pagani-zonda-revolucion"
+ },
+ {
+  "id": "pagani_huayra_r",
+  "name": "Pagani Huayra R",
+  "engine": "6.0L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "pagani-huayra-r"
+ },
+ {
+  "id": "aston_martin_valkyrie",
+  "name": "Aston Martin Valkyrie",
+  "engine": "6.5L Cosworth Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 1100,
+  "redline": 11000,
+  "slug": "aston-martin-valkyrie"
+ },
+ {
+  "id": "aston_martin_v12_vantage_s",
+  "name": "Aston Martin V12 Vantage S",
+  "engine": "5.9L Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 750,
+  "redline": 7200,
+  "slug": "aston-martin-v12-vantage-s"
+ },
+ {
+  "id": "gordon_murray_t_50",
+  "name": "Gordon Murray T.50",
+  "engine": "4.0L Cosworth Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 1100,
+  "redline": 12100,
+  "slug": "gordon-murray-t-50"
+ },
+ {
+  "id": "mclaren_f1",
+  "name": "McLaren F1",
+  "engine": "6.1L BMW Naturally Aspirated V12",
+  "category": "Exotic V12",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "mclaren-f1"
+ },
+ {
+  "id": "lotus_exige_s3_v6",
+  "name": "Lotus Exige S3 V6",
+  "engine": "3.5L Supercharged V6",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "lotus-exige-s3-v6"
+ },
+ {
+  "id": "lotus_exige_cup_430",
+  "name": "Lotus Exige Cup 430",
+  "engine": "3.5L Supercharged V6",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 7200,
+  "slug": "lotus-exige-cup-430"
+ },
+ {
+  "id": "lotus_exige_sport_410",
+  "name": "Lotus Exige Sport 410",
+  "engine": "3.5L Supercharged V6",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 7200,
+  "slug": "lotus-exige-sport-410"
+ },
+ {
+  "id": "lotus_exige_s2_240r",
+  "name": "Lotus Exige S2 240R",
+  "engine": "1.8L Supercharged Inline-4",
+  "category": "Supercharged Monsters",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "lotus-exige-s2-240r"
+ },
+ {
+  "id": "lotus_exige_s2_cup_260",
+  "name": "Lotus Exige S2 Cup 260",
+  "engine": "1.8L Supercharged Inline-4",
+  "category": "Supercharged Monsters",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "lotus-exige-s2-cup-260"
+ },
+ {
+  "id": "lotus_2_eleven",
+  "name": "Lotus 2-Eleven",
+  "engine": "1.8L Supercharged Inline-4",
+  "category": "Supercharged Monsters",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "lotus-2-eleven"
+ },
+ {
+  "id": "lotus_evora_gt430",
+  "name": "Lotus Evora GT430",
+  "engine": "3.5L Supercharged V6",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 7200,
+  "slug": "lotus-evora-gt430"
+ },
+ {
+  "id": "lotus_emira_v6",
+  "name": "Lotus Emira V6",
+  "engine": "3.5L Supercharged V6",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "lotus-emira-v6"
+ },
+ {
+  "id": "jaguar_f_type_r",
+  "name": "Jaguar F-Type R",
+  "engine": "5.0L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 6800,
+  "slug": "jaguar-f-type-r"
+ },
+ {
+  "id": "jaguar_f_type_svr",
+  "name": "Jaguar F-Type SVR",
+  "engine": "5.0L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 6800,
+  "slug": "jaguar-f-type-svr"
+ },
+ {
+  "id": "chevrolet_corvette_zr1_c6",
+  "name": "Chevrolet Corvette ZR1 C6",
+  "engine": "6.2L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "chevrolet-corvette-zr1-c6"
+ },
+ {
+  "id": "chevrolet_camaro_zl1",
+  "name": "Chevrolet Camaro ZL1",
+  "engine": "6.2L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "chevrolet-camaro-zl1"
+ },
+ {
+  "id": "ford_mustang_shelby_gt500_2020",
+  "name": "Ford Mustang Shelby GT500 (2020)",
+  "engine": "5.2L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "ford-mustang-shelby-gt500-2020"
+ },
+ {
+  "id": "dodge_challenger_srt_hellcat_redeye",
+  "name": "Dodge Challenger SRT Hellcat Redeye",
+  "engine": "6.2L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "dodge-challenger-srt-hellcat-redeye"
+ },
+ {
+  "id": "dodge_challenger_srt_demon_170",
+  "name": "Dodge Challenger SRT Demon 170",
+  "engine": "6.2L Supercharged V8",
+  "category": "Supercharged Monsters",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "dodge-challenger-srt-demon-170"
+ },
+ {
+  "id": "ferrari_458_italia",
+  "name": "Ferrari 458 Italia",
+  "engine": "4.5L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "ferrari-458-italia"
+ },
+ {
+  "id": "ferrari_458_speciale",
+  "name": "Ferrari 458 Speciale",
+  "engine": "4.5L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "ferrari-458-speciale"
+ },
+ {
+  "id": "ferrari_f430_scuderia",
+  "name": "Ferrari F430 Scuderia",
+  "engine": "4.3L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "ferrari-f430-scuderia"
+ },
+ {
+  "id": "ferrari_360_challenge_stradale",
+  "name": "Ferrari 360 Challenge Stradale",
+  "engine": "3.6L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "ferrari-360-challenge-stradale"
+ },
+ {
+  "id": "mercedes_benz_c63_amg_w204",
+  "name": "Mercedes-Benz C63 AMG W204",
+  "engine": "6.2L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 750,
+  "redline": 7200,
+  "slug": "mercedes-benz-c63-amg-w204"
+ },
+ {
+  "id": "mercedes_benz_sls_amg_black_series",
+  "name": "Mercedes-Benz SLS AMG Black Series",
+  "engine": "6.2L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "mercedes-benz-sls-amg-black-series"
+ },
+ {
+  "id": "bmw_m3_e92",
+  "name": "BMW M3 E92",
+  "engine": "4.0L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8400,
+  "slug": "bmw-m3-e92"
+ },
+ {
+  "id": "bmw_m3_gts_e92",
+  "name": "BMW M3 GTS E92",
+  "engine": "4.4L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8300,
+  "slug": "bmw-m3-gts-e92"
+ },
+ {
+  "id": "audi_rs4_b7",
+  "name": "Audi RS4 B7",
+  "engine": "4.2L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8250,
+  "slug": "audi-rs4-b7"
+ },
+ {
+  "id": "audi_r8_v8",
+  "name": "Audi R8 V8",
+  "engine": "4.2L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8250,
+  "slug": "audi-r8-v8"
+ },
+ {
+  "id": "ford_mustang_shelby_gt350r",
+  "name": "Ford Mustang Shelby GT350R",
+  "engine": "5.2L Flat-Plane V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8250,
+  "slug": "ford-mustang-shelby-gt350r"
+ },
+ {
+  "id": "chevrolet_corvette_z06_c8",
+  "name": "Chevrolet Corvette Z06 C8",
+  "engine": "5.5L Flat-Plane V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8600,
+  "slug": "chevrolet-corvette-z06-c8"
+ },
+ {
+  "id": "chevrolet_corvette_z06_c6",
+  "name": "Chevrolet Corvette Z06 C6",
+  "engine": "7.0L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "chevrolet-corvette-z06-c6"
+ },
+ {
+  "id": "lexus_is_f",
+  "name": "Lexus IS F",
+  "engine": "5.0L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 750,
+  "redline": 6800,
+  "slug": "lexus-is-f"
+ },
+ {
+  "id": "maserati_granturismo_mc_stradale",
+  "name": "Maserati GranTurismo MC Stradale",
+  "engine": "4.7L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "maserati-granturismo-mc-stradale"
+ },
+ {
+  "id": "maserati_quattroporte_sport_gt_s",
+  "name": "Maserati Quattroporte Sport GT S",
+  "engine": "4.7L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "maserati-quattroporte-sport-gt-s"
+ },
+ {
+  "id": "aston_martin_v8_vantage_4_7",
+  "name": "Aston Martin V8 Vantage 4.7",
+  "engine": "4.7L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 750,
+  "redline": 7300,
+  "slug": "aston-martin-v8-vantage-4-7"
+ },
+ {
+  "id": "tvr_cerbera_4_5",
+  "name": "TVR Cerbera 4.5",
+  "engine": "4.5L Naturally Aspirated V8",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "tvr-cerbera-4-5"
+ },
+ {
+  "id": "porsche_918_spyder",
+  "name": "Porsche 918 Spyder",
+  "engine": "4.6L Naturally Aspirated V8 Hybrid",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 9150,
+  "slug": "porsche-918-spyder"
+ },
+ {
+  "id": "mclaren_p1",
+  "name": "McLaren P1",
+  "engine": "3.8L Twin-Turbo V8 Hybrid",
+  "category": "Legendary V8",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "mclaren-p1"
+ },
+ {
+  "id": "toyota_supra_mk4_turbo",
+  "name": "Toyota Supra MK4 Turbo",
+  "engine": "3.0L Twin-Turbo Inline-6 (2JZ-GTE)",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "toyota-supra-mk4-turbo"
+ },
+ {
+  "id": "toyota_supra_mk5_3_0",
+  "name": "Toyota Supra MK5 3.0",
+  "engine": "3.0L Turbo Inline-6 (B58)",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "toyota-supra-mk5-3-0"
+ },
+ {
+  "id": "nissan_skyline_gt_r_r34",
+  "name": "Nissan Skyline GT-R R34",
+  "engine": "2.6L Twin-Turbo Inline-6 (RB26)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "nissan-skyline-gt-r-r34"
+ },
+ {
+  "id": "nissan_skyline_gt_r_r32",
+  "name": "Nissan Skyline GT-R R32",
+  "engine": "2.6L Twin-Turbo Inline-6 (RB26)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "nissan-skyline-gt-r-r32"
+ },
+ {
+  "id": "nissan_gt_r_r35",
+  "name": "Nissan GT-R R35",
+  "engine": "3.8L Twin-Turbo V6",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7100,
+  "slug": "nissan-gt-r-r35"
+ },
+ {
+  "id": "nissan_370z_nismo",
+  "name": "Nissan 370Z Nismo",
+  "engine": "3.7L Naturally Aspirated V6",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "nissan-370z-nismo"
+ },
+ {
+  "id": "nissan_350z",
+  "name": "Nissan 350Z",
+  "engine": "3.5L Naturally Aspirated V6",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 6600,
+  "slug": "nissan-350z"
+ },
+ {
+  "id": "mazda_rx_7_fd3s",
+  "name": "Mazda RX-7 FD3S",
+  "engine": "1.3L Twin-Turbo Rotary (13B)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "mazda-rx-7-fd3s"
+ },
+ {
+  "id": "mazda_rx_8",
+  "name": "Mazda RX-8",
+  "engine": "1.3L Naturally Aspirated Rotary (13B-MSP)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "mazda-rx-8"
+ },
+ {
+  "id": "mazda_787b",
+  "name": "Mazda 787B",
+  "engine": "2.6L Four-Rotor (R26B)",
+  "category": "JDM and Turbo Legends",
+  "idle": 1100,
+  "redline": 10000,
+  "slug": "mazda-787b"
+ },
+ {
+  "id": "honda_s2000_ap1",
+  "name": "Honda S2000 AP1",
+  "engine": "2.0L Naturally Aspirated Inline-4 (F20C)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "honda-s2000-ap1"
+ },
+ {
+  "id": "honda_civic_type_r_ek9",
+  "name": "Honda Civic Type R EK9",
+  "engine": "1.6L Naturally Aspirated Inline-4 (B16B)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8400,
+  "slug": "honda-civic-type-r-ek9"
+ },
+ {
+  "id": "honda_integra_type_r_dc2",
+  "name": "Honda Integra Type R DC2",
+  "engine": "1.8L Naturally Aspirated Inline-4 (B18C)",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8400,
+  "slug": "honda-integra-type-r-dc2"
+ },
+ {
+  "id": "honda_nsx_na1",
+  "name": "Honda NSX NA1",
+  "engine": "3.0L Naturally Aspirated V6",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "honda-nsx-na1"
+ },
+ {
+  "id": "subaru_impreza_wrx_sti_2004",
+  "name": "Subaru Impreza WRX STI 2004",
+  "engine": "2.0L/2.5L Turbo Boxer-4",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "subaru-impreza-wrx-sti-2004"
+ },
+ {
+  "id": "subaru_impreza_22b_sti",
+  "name": "Subaru Impreza 22B STI",
+  "engine": "2.2L Turbo Boxer-4",
+  "category": "JDM and Turbo Legends",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "subaru-impreza-22b-sti"
+ },
+ {
+  "id": "mitsubishi_lancer_evolution_ix",
+  "name": "Mitsubishi Lancer Evolution IX",
+  "engine": "2.0L Turbo Inline-4 (4G63)",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "mitsubishi-lancer-evolution-ix"
+ },
+ {
+  "id": "mitsubishi_lancer_evolution_vi_tommi_makinen_edition",
+  "name": "Mitsubishi Lancer Evolution VI Tommi Mäkinen Edition",
+  "engine": "2.0L Turbo Inline-4 (4G63)",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7500,
+  "slug": "mitsubishi-lancer-evolution-vi-tommi-makinen-edition"
+ },
+ {
+  "id": "toyota_gr_yaris",
+  "name": "Toyota GR Yaris",
+  "engine": "1.6L Turbo Inline-3",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7200,
+  "slug": "toyota-gr-yaris"
+ },
+ {
+  "id": "toyota_ae86_sprinter_trueno",
+  "name": "Toyota AE86 Sprinter Trueno",
+  "engine": "1.6L Naturally Aspirated Inline-4 (4A-GE)",
+  "category": "JDM and Turbo Legends",
+  "idle": 750,
+  "redline": 7600,
+  "slug": "toyota-ae86-sprinter-trueno"
+ },
+ {
+  "id": "porsche_911_gt3_rs_997",
+  "name": "Porsche 911 GT3 RS 997",
+  "engine": "3.6L/3.8L Naturally Aspirated Flat-6",
+  "category": "European Cult Classics",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "porsche-911-gt3-rs-997"
+ },
+ {
+  "id": "porsche_911_gt3_rs_991_2",
+  "name": "Porsche 911 GT3 RS 991.2",
+  "engine": "4.0L Naturally Aspirated Flat-6",
+  "category": "European Cult Classics",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "porsche-911-gt3-rs-991-2"
+ },
+ {
+  "id": "porsche_911_gt3_rs_992",
+  "name": "Porsche 911 GT3 RS 992",
+  "engine": "4.0L Naturally Aspirated Flat-6",
+  "category": "European Cult Classics",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "porsche-911-gt3-rs-992"
+ },
+ {
+  "id": "porsche_cayman_gt4_rs",
+  "name": "Porsche Cayman GT4 RS",
+  "engine": "4.0L Naturally Aspirated Flat-6",
+  "category": "European Cult Classics",
+  "idle": 900,
+  "redline": 9000,
+  "slug": "porsche-cayman-gt4-rs"
+ },
+ {
+  "id": "porsche_911_r",
+  "name": "Porsche 911 R",
+  "engine": "4.0L Naturally Aspirated Flat-6",
+  "category": "European Cult Classics",
+  "idle": 900,
+  "redline": 8500,
+  "slug": "porsche-911-r"
+ },
+ {
+  "id": "porsche_911_turbo_930",
+  "name": "Porsche 911 Turbo 930",
+  "engine": "3.0L/3.3L Turbo Flat-6",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "porsche-911-turbo-930"
+ },
+ {
+  "id": "bmw_m3_e46_csl",
+  "name": "BMW M3 E46 CSL",
+  "engine": "3.2L Naturally Aspirated Inline-6 (S54)",
+  "category": "European Cult Classics",
+  "idle": 900,
+  "redline": 8000,
+  "slug": "bmw-m3-e46-csl"
+ },
+ {
+  "id": "bmw_m3_e30_sport_evolution",
+  "name": "BMW M3 E30 Sport Evolution",
+  "engine": "2.5L Naturally Aspirated Inline-4 (S14)",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 7600,
+  "slug": "bmw-m3-e30-sport-evolution"
+ },
+ {
+  "id": "bmw_1m_coupe",
+  "name": "BMW 1M Coupé",
+  "engine": "3.0L Twin-Turbo Inline-6 (N54)",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "bmw-1m-coupe"
+ },
+ {
+  "id": "bmw_m2_competition_f87",
+  "name": "BMW M2 Competition F87",
+  "engine": "3.0L Twin-Turbo Inline-6 (S55)",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 7600,
+  "slug": "bmw-m2-competition-f87"
+ },
+ {
+  "id": "volkswagen_golf_r32_mk4",
+  "name": "Volkswagen Golf R32 MK4",
+  "engine": "3.2L Naturally Aspirated VR6",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "volkswagen-golf-r32-mk4"
+ },
+ {
+  "id": "volkswagen_golf_r32_mk5",
+  "name": "Volkswagen Golf R32 MK5",
+  "engine": "3.2L Naturally Aspirated VR6",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 6500,
+  "slug": "volkswagen-golf-r32-mk5"
+ },
+ {
+  "id": "alfa_romeo_147_gta",
+  "name": "Alfa Romeo 147 GTA",
+  "engine": "3.2L Naturally Aspirated Busso V6",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "alfa-romeo-147-gta"
+ },
+ {
+  "id": "audi_rs3_8v",
+  "name": "Audi RS3 8V",
+  "engine": "2.5L Turbo Inline-5",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 7000,
+  "slug": "audi-rs3-8v"
+ },
+ {
+  "id": "bugatti_veyron_16_4",
+  "name": "Bugatti Veyron 16.4",
+  "engine": "8.0L Quad-Turbo W16",
+  "category": "European Cult Classics",
+  "idle": 750,
+  "redline": 6600,
+  "slug": "bugatti-veyron-16-4"
+ }
+]
