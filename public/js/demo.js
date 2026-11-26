@@ -41,10 +41,8 @@ function mount(root) {
       let last = performance.now();
       const loop = (now) => { ctrl.frame((now - last) / 1000); last = now; requestAnimationFrame(loop); };
       requestAnimationFrame(loop);
-      startBtn.hidden = true;
-      pedal.hidden = false;
-      root.classList.add('is-running');
-      status.textContent = 'Engine running. Hold the pedal or press Space to rev.';
+      startBtn.disabled = false;
+      running(true);
     } catch (e) {
       startBtn.disabled = false;
       startBtn.textContent = 'Start engine';
@@ -52,9 +50,26 @@ function mount(root) {
       console.error(e);
     }
   }
-  startBtn.addEventListener('click', boot);
+  /** One button: Start engine ↔ Stop engine. */
+  function running(on) {
+    pedal.hidden = !on;
+    pedal.classList.remove('is-down');
+    startBtn.textContent = on ? 'Stop engine' : 'Start engine';
+    startBtn.classList.toggle('btn-red', !on);
+    startBtn.classList.toggle('btn-ghost', on);
+    root.classList.toggle('is-running', on);
+    status.textContent = on ? 'Engine running. Hold the pedal or press Space to rev.' : 'Engine off. Press Start engine to fire it up again.';
+  }
+  startBtn.addEventListener('click', async () => {
+    if (!engine) return boot();
+    if (engine.playing) { engine.stop(); running(false); return; }
+    startBtn.disabled = true;
+    await engine.start();
+    startBtn.disabled = false;
+    running(true);
+  });
 
-  const press = (v) => { if (engine) { engine.setThrottle(v); pedal.classList.toggle('is-down', v > 0); } };
+  const press = (v) => { if (engine?.playing) { engine.setThrottle(v); pedal.classList.toggle('is-down', v > 0); } };
   pedal.addEventListener('pointerdown', (e) => { pedal.setPointerCapture(e.pointerId); press(1); });
   for (const ev of ['pointerup', 'pointercancel', 'lostpointercapture']) pedal.addEventListener(ev, () => press(0));
   pedal.addEventListener('contextmenu', (e) => e.preventDefault());

@@ -63,8 +63,8 @@ ${picker}
 <div class="views" role="group" aria-label="Listening position">
 <button type="button" data-view="exhaust" aria-pressed="true">01 EXHAUST</button><button type="button" data-view="intake" aria-pressed="false">02 INTAKE</button><button type="button" data-view="side" aria-pressed="false">03 SIDE</button><button type="button" data-view="cabin" aria-pressed="false">04 CABIN</button>
 </div>
-<button type="button" class="btn btn-red btn-start" data-start>Start engine</button>
 <button type="button" class="pedal" data-pedal hidden>Hold to rev</button>
+<button type="button" class="btn btn-red btn-start" data-start>Start engine</button>
 <p class="status" data-status role="status" aria-live="polite">Press Start, then hold the pedal or the Space bar to rev.</p>
 <div class="limit-card" data-limit hidden>
 <h3>Keep revving, in the app</h3>

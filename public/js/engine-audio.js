@@ -128,7 +128,8 @@ export class EngineAudio {
     this.playing = false;
   }
 
-  stop() { this.stopVoices(); }
+  /** Engine off: silence, let off the pedal, and come back at idle next start. */
+  stop() { this.setThrottle(0); this.stopVoices(); if (this.car) this.sim = new RpmSim(this.car); }
 
   dispose() { this.stopVoices(); this.buffers = null; this.ready = false; }
 }

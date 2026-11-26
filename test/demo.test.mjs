@@ -95,3 +95,20 @@ test('controller shows the app card once after 60 s of revving; dismiss keeps au
   assert.equal(shown, 1, 'card not re-shown in the same visit');
   assert.equal(engine.stopped, false, 'engine keeps running');
 });
+
+test('stop silences every source, releases throttle, resets to idle; start runs again', async () => {
+  const ctx = new FakeCtx();
+  const e = new EngineAudio(ctx, { fetchBuffer: fetchBuf });
+  e.load(carA);
+  await e.start();
+  e.setThrottle(1);
+  for (let i = 0; i < 150; i++) e.tick(1 / 30);
+  assert.ok(e.tick(0).rpm > 3000);
+  e.stop();
+  assert.equal(ctx.sources.filter((s) => s.started && !s.stopped).length, 0);
+  assert.equal(e.playing, false);
+  assert.equal(e.throttle, 0);
+  assert.equal(Math.round(e.tick(0).rpm), carA.idle);
+  await e.start();
+  assert.equal(ctx.sources.filter((s) => s.loop && s.started && !s.stopped).length, 8);
+});
