@@ -3,6 +3,7 @@ import {
   IOS_URL, PLAY_URL, PRIVACY_URL, SUPPORT_URL, DISCLAIMER,
 } from './seo.mjs';
 import { carParagraphs, carFaq, carDescription, HOME_FAQ } from './copy.mjs';
+import { PRIVACY_HTML, PRIVACY_UPDATED } from './privacy.mjs';
 
 const fmt = (n) => n.toLocaleString('en-US');
 const demoCar = (c) => JSON.stringify({ id: c.id, name: c.name, idle: c.idle, redline: c.redline, category: c.category }).replaceAll("'", '&#39;');
@@ -38,7 +39,7 @@ ${body}
 </main>
 <footer class="site-footer">
 ${storeBadges()}
-<p><a href="/cars/">All engines</a> · <a href="${PRIVACY_URL}" rel="noopener">Privacy</a> · <a href="${SUPPORT_URL}" rel="noopener">Support</a></p>
+<p><a href="/cars/">All engines</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="${SUPPORT_URL}" rel="noopener">Support</a></p>
 <p class="muted">${DISCLAIMER}</p>
 <p class="muted">© ${new Date().getFullYear()} SuperRev</p>
 </footer>
@@ -179,6 +180,21 @@ ${faqBlock(faq)}
     description: carDescription(car),
     path, body, demo: true,
     schemas: [breadcrumbSchema([['Home', '/'], ['Engines', '/cars/'], [cat.name, `/cars/${cat.slug}/`], [car.name, path]]), faqSchema(faq)],
+  });
+}
+
+export function privacyPage() {
+  return page({
+    title: 'Privacy Policy | SuperRev',
+    description: 'How SuperRev handles your data: GPS and motion sensors stay on your phone, ads come from Google AdMob and Unity Ads, and superev.app sets no cookies.',
+    path: '/privacy/',
+    body: `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Privacy Policy</span></nav>
+<article class="legal">
+<h1>Privacy Policy</h1>
+<p class="muted">SuperRev: Engine Sounds · Last updated: ${PRIVACY_UPDATED}</p>
+${PRIVACY_HTML}
+</article>`,
+    schemas: [breadcrumbSchema([['Home', '/'], ['Privacy Policy', '/privacy/']])],
   });
 }
 

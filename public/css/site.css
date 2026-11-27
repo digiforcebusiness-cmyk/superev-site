@@ -89,6 +89,9 @@ select, .filter { width: 100%; background: var(--raised); color: var(--text); bo
 .filter { margin: 8px 0 8px; max-width: 420px; }
 .cat-section h2 a { text-decoration: none; }
 .disclaimer { margin-top: 32px; }
+.legal { max-width: 75ch; }
+.legal h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); margin: 1.6em 0 .5em; }
+.legal li { margin: .35em 0; }
 
 /* First screen: headline + engine console, Start visible without scrolling.
    Phones: headline, console, then the intro. Wide screens: text left, console right. */

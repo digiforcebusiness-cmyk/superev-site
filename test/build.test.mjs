@@ -27,8 +27,8 @@ before(() => {
   for (const p of walk(pub)) pages[relative(pub, p).replaceAll('\\', '/')] = readFileSync(p, 'utf8');
 });
 
-test('writes home, cars index, category hubs, car pages and 404', () => {
-  assert.equal(Object.keys(pages).length, 3 + categories.length + cars.length);
+test('writes home, cars index, category hubs, car pages, privacy and 404', () => {
+  assert.equal(Object.keys(pages).length, 4 + categories.length + cars.length);
   assert.ok(pages['index.html'] && pages['cars/index.html'] && pages['404.html']);
   for (const c of cars) assert.ok(pages[`cars/${c.slug}/index.html`], c.slug);
   for (const c of categories) assert.ok(pages[`cars/${c.slug}/index.html`], c.slug);
@@ -78,7 +78,16 @@ test('home page carries the app schema and every car in the picker', () => {
 test('sitemap lists every page except 404; robots points to it', () => {
   const sm = readFileSync(join(pub, 'sitemap.xml'), 'utf8');
   const locs = all(sm, /<loc>([^<]+)<\/loc>/g);
-  assert.equal(locs.length, 2 + categories.length + cars.length);
+  assert.equal(locs.length, 3 + categories.length + cars.length);
   assert.ok(locs.every((l) => l.startsWith('https://superev.app/') && l.endsWith('/')));
   assert.ok(readFileSync(join(pub, 'robots.txt'), 'utf8').includes('Sitemap: https://superev.app/sitemap.xml'));
+});
+
+test('privacy policy lives on superev.app, covers app ads (AdMob + Unity) and the website, and every footer links to it', () => {
+  const h = pages['privacy/index.html'];
+  assert.ok(h, 'privacy page missing');
+  assert.equal(one(h, /<link rel="canonical" href="([^"]+)"/g), 'https://superev.app/privacy/');
+  assert.match(one(h, /<h1[^>]*>([\s\S]*?)<\/h1>/g), /Privacy Policy/);
+  for (const s of ['Google AdMob', 'Unity Ads', 'Location', 'superev.app', 'cookies', 'Children']) assert.ok(h.includes(s), s);
+  for (const [path, p] of Object.entries(pages)) assert.ok(p.includes('href="/privacy/"'), path);
 });
