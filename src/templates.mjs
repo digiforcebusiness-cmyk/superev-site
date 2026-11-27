@@ -39,7 +39,7 @@ ${body}
 </main>
 <footer class="site-footer">
 ${storeBadges()}
-<p><a href="/cars/">All engines</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="${SUPPORT_URL}">Contact</a></p>
+<p><a href="/cars/">All engines</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="/privacy-choices/">Privacy choices</a> · <a href="${SUPPORT_URL}">Contact</a></p>
 <p class="muted">${DISCLAIMER}</p>
 <p class="muted">© ${new Date().getFullYear()} SuperRev</p>
 </footer>
@@ -236,6 +236,60 @@ export function contactPage() {
 </article>
 <script type="module" src="/js/contact.js"></script>`,
     schemas: [breadcrumbSchema([['Home', '/'], ['Contact', '/contact/']])],
+  });
+}
+
+export function privacyChoicesPage() {
+  return page({
+    title: 'Your Privacy Choices | SuperRev',
+    description: 'Manage your SuperRev privacy choices: ad tracking, regional ad consent, your advertising ID, ad-free Premium, location and motion access, and data requests.',
+    path: '/privacy-choices/',
+    body: `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/privacy/">Privacy Policy</a> / <span>Your privacy choices</span></nav>
+<article class="legal">
+<h1>Your privacy choices</h1>
+<p class="lead">SuperRev keeps your driving data on your phone. The choices below control the advertising data handled by Google AdMob and Unity Ads, and the phone sensors the app may use. Full details are in the <a href="/privacy/">Privacy Policy</a>.</p>
+
+<h2>1. Ad tracking on iPhone and iPad</h2>
+<p>On iOS, SuperRev asks permission before your device's advertising identifier can be used to personalize ads across other companies' apps and websites.</p>
+<ul>
+<li><strong>Allow</strong>: ads may be personalized.</li>
+<li><strong>Ask App Not to Track</strong>: SuperRev requests only non-personalized ads. You still see ads, but they aren't based on your activity in other apps.</li>
+</ul>
+<p>Change your answer at any time: <strong>Settings → Privacy &amp; Security → Tracking → SuperRev</strong>. To stop all apps from asking, turn off <em>Allow Apps to Request to Track</em> on the same screen.</p>
+
+<h2>2. Regional ad consent (EEA, UK, Switzerland and other regions)</h2>
+<p>Where the law requires it, SuperRev shows Google's consent form before loading ads, so you can accept or decline personalized advertising and choose which partners may process your data.</p>
+<p>Change your choice at any time in the app: <strong>SuperRev → Settings → Legal → Ad privacy choices</strong>. This option appears in regions where consent applies.</p>
+
+<h2>3. Your advertising ID</h2>
+<ul>
+<li><strong>iPhone and iPad</strong>: when tracking is not allowed (Section 1), apps receive no advertising identifier.</li>
+<li><strong>Android</strong>: <strong>Settings → Privacy → Ads</strong> (or <strong>Settings → Google → Ads</strong>) lets you delete or reset your advertising ID. Without it, ads are not personalized.</li>
+</ul>
+
+<h2>4. Google and Unity ad settings</h2>
+<ul>
+<li><strong>Google</strong>: review and control how Google personalizes ads in <a href="https://myadcenter.google.com" rel="noopener">My Ad Center</a>, and see the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+<li><strong>Unity Ads</strong>: ads served by Unity may show a privacy icon in the ad itself; you can also make requests to Unity under its <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">privacy policy</a>.</li>
+</ul>
+
+<h2>5. Remove ads completely</h2>
+<p>A one-time <strong>SuperRev Premium</strong> purchase removes all ads (and unlocks every engine sound), so no advertising data is collected at all: <strong>SuperRev → Settings → Remove ads &amp; unlock all sounds</strong>. Already bought it on another device? Use <strong>Restore purchases</strong> on the same screen.</p>
+
+<h2>6. Location and motion sensors</h2>
+<p>GPS speed and motion sensors drive the engine simulation on your device and are never sent to us. You can turn them off; the app keeps working with the on-screen throttle.</p>
+<ul>
+<li><strong>iPhone and iPad</strong>: <strong>Settings → SuperRev → Location</strong> (Never, Ask Next Time, or While Using the App) and <strong>Motion &amp; Fitness</strong>.</li>
+<li><strong>Android</strong>: <strong>Settings → Apps → SuperRev → Permissions</strong>.</li>
+</ul>
+
+<h2>7. Delete your data or make a request</h2>
+<p>SuperRev stores your selected car, calibration and preferences only on your device: uninstalling the app deletes them. We hold no personal data on our servers, but you can ask us to confirm this or make any privacy request, including under GDPR or the CCPA, through the <a href="/contact/">contact page</a>. We reply within 7 business days.</p>
+
+<h2>8. This website</h2>
+<p>superev.app sets no cookies and runs no analytics or ads, so there is nothing to opt out of here. If you use the contact form, your message is used only to reply to you.</p>
+</article>`,
+    schemas: [breadcrumbSchema([['Home', '/'], ['Privacy Policy', '/privacy/'], ['Your privacy choices', '/privacy-choices/']])],
   });
 }
 

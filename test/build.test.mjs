@@ -27,8 +27,8 @@ before(() => {
   for (const p of walk(pub)) pages[relative(pub, p).replaceAll('\\', '/')] = readFileSync(p, 'utf8');
 });
 
-test('writes home, cars index, category hubs, car pages, privacy, contact and 404', () => {
-  assert.equal(Object.keys(pages).length, 5 + categories.length + cars.length);
+test('writes home, cars index, category hubs, car pages, privacy, privacy choices, contact and 404', () => {
+  assert.equal(Object.keys(pages).length, 6 + categories.length + cars.length);
   assert.ok(pages['index.html'] && pages['cars/index.html'] && pages['404.html']);
   for (const c of cars) assert.ok(pages[`cars/${c.slug}/index.html`], c.slug);
   for (const c of categories) assert.ok(pages[`cars/${c.slug}/index.html`], c.slug);
@@ -78,7 +78,7 @@ test('home page carries the app schema and every car in the picker', () => {
 test('sitemap lists every page except 404; robots points to it', () => {
   const sm = readFileSync(join(pub, 'sitemap.xml'), 'utf8');
   const locs = all(sm, /<loc>([^<]+)<\/loc>/g);
-  assert.equal(locs.length, 4 + categories.length + cars.length);
+  assert.equal(locs.length, 5 + categories.length + cars.length);
   assert.ok(locs.every((l) => l.startsWith('https://superev.app/') && l.endsWith('/')));
   assert.ok(readFileSync(join(pub, 'robots.txt'), 'utf8').includes('Sitemap: https://superev.app/sitemap.xml'));
 });
@@ -103,4 +103,13 @@ test('contact page: form with required fields posting via Web3Forms, mailto fall
   for (const s of ['Bug reports', 'Quick troubleshooting', 'Bluetooth']) assert.ok(h.includes(s), s);
   for (const [path, p] of Object.entries(pages)) assert.ok(p.includes('href="/contact/"'), path);
   assert.ok(pages['privacy/index.html'].includes('Web3Forms'), 'privacy must disclose the contact form processor');
+});
+
+test('privacy choices page (Apple "User Privacy Choices URL") lists the real in-app controls and is linked from privacy and footers', () => {
+  const h = pages['privacy-choices/index.html'];
+  assert.ok(h, 'privacy choices page missing');
+  assert.equal(one(h, /<link rel="canonical" href="([^"]+)"/g), 'https://superev.app/privacy-choices/');
+  for (const s of ['Ask App Not to Track', 'Ad privacy choices', 'Remove ads', 'myadcenter.google.com', 'Location', 'href="/contact/"']) assert.ok(h.includes(s), s);
+  assert.ok(pages['privacy/index.html'].includes('href="/privacy-choices/"'));
+  for (const [path, p] of Object.entries(pages)) assert.ok(p.includes('href="/privacy-choices/"'), path);
 });

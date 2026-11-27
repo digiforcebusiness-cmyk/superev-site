@@ -1,6 +1,6 @@
 // Writes every HTML page, sitemap.xml and robots.txt into public/.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
-import { home, carsIndex, categoryPage, carPage, privacyPage, contactPage, notFound } from './src/templates.mjs';
+import { home, carsIndex, categoryPage, carPage, privacyPage, privacyChoicesPage, contactPage, notFound } from './src/templates.mjs';
 import { ORIGIN } from './src/seo.mjs';
 
 const cars = JSON.parse(readFileSync(new URL('./data/cars.json', import.meta.url)));
@@ -23,6 +23,7 @@ for (const car of cars) {
   emit(`/cars/${car.slug}/`, carPage({ car, cat, cars }));
 }
 emit('/privacy/', privacyPage());
+emit('/privacy-choices/', privacyChoicesPage());
 emit('/contact/', contactPage());
 writeFileSync(new URL('404.html', out), notFound());
 

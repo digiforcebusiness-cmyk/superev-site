@@ -80,7 +80,7 @@ export const PRIVACY_HTML = `
 <p>SuperRev is not directed to children under 13 and is intended for a general audience aged 13 and over. The app does not knowingly collect personal information from children. Because the app shows advertising, it is not enrolled in Google Play's "Designed for Families" program. Parents and guardians with questions can contact us at the email below.</p>
 
 <h2>11. Your rights</h2>
-<p>SuperRev holds no personal information about you on any server, so there is nothing for us to access, correct, or delete remotely. You retain full control over:</p>
+<p>SuperRev holds no personal information about you on any server, so there is nothing for us to access, correct, or delete remotely. You retain full control over the following; step-by-step instructions are on the <a href="/privacy-choices/">Your privacy choices</a> page:</p>
 <ul>
 <li><strong>On-device data</strong>: uninstall the app to wipe everything it has stored locally</li>
 <li><strong>Location and sensor access</strong>: toggle in Android Settings → Apps → SuperRev → Permissions, or iOS Settings → SuperRev</li>
