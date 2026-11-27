@@ -2,7 +2,7 @@ export const ORIGIN = 'https://superev.app';
 export const IOS_URL = 'https://apps.apple.com/app/id6770043689?ct=superev';
 export const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.tuning3d.engine.sounds&referrer=utm_source%3Dsuperev';
 export const PRIVACY_URL = '/privacy/';
-export const SUPPORT_URL = 'https://www.servepointpos.com/superrev/contact';
+export const SUPPORT_URL = '/contact/';
 export const DISCLAIMER = 'Engine-inspired simulations. Not affiliated with or endorsed by any vehicle manufacturer.';
 
 export const esc = (s) => String(s)

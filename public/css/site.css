@@ -92,6 +92,17 @@ select, .filter { width: 100%; background: var(--raised); color: var(--text); bo
 .legal { max-width: 75ch; }
 .legal h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); margin: 1.6em 0 .5em; }
 .legal li { margin: .35em 0; }
+.contact-form { display: grid; gap: 14px; background: var(--surface); border: 1px solid var(--outline); border-radius: var(--radius); padding: 20px; margin: 24px 0; }
+.contact-form .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.contact-form label { display: grid; gap: 6px; font-weight: 600; font-size: .92rem; }
+.contact-form input, .contact-form textarea { background: var(--raised); color: var(--text); border: 1px solid var(--outline); border-radius: 10px; padding: 12px; font: 400 1rem var(--body); }
+.contact-form textarea { resize: vertical; }
+.contact-form .btn { justify-self: start; }
+.contact-form .muted { margin: 0; }
+.botcheck { position: absolute; left: -9999px; }
+.form-status { margin: 0; min-height: 1.4em; }
+.form-status.ok { color: #4CD964; }
+.form-status.error { color: var(--red); }
 
 /* First screen: headline + engine console, Start visible without scrolling.
    Phones: headline, console, then the intro. Wide screens: text left, console right. */

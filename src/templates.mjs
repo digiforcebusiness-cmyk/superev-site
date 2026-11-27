@@ -39,7 +39,7 @@ ${body}
 </main>
 <footer class="site-footer">
 ${storeBadges()}
-<p><a href="/cars/">All engines</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="${SUPPORT_URL}" rel="noopener">Support</a></p>
+<p><a href="/cars/">All engines</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="${SUPPORT_URL}">Contact</a></p>
 <p class="muted">${DISCLAIMER}</p>
 <p class="muted">© ${new Date().getFullYear()} SuperRev</p>
 </footer>
@@ -195,6 +195,47 @@ export function privacyPage() {
 ${PRIVACY_HTML}
 </article>`,
     schemas: [breadcrumbSchema([['Home', '/'], ['Privacy Policy', '/privacy/']])],
+  });
+}
+
+export function contactPage() {
+  return page({
+    title: 'Contact & Support | SuperRev',
+    description: 'Get help with SuperRev: report a bug, suggest a new engine, or ask about privacy. Send us a message and we reply within 7 business days.',
+    path: '/contact/',
+    body: `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Contact</span></nav>
+<article class="legal">
+<h1>Contact &amp; support</h1>
+<p class="lead">Bug report, feature idea, or anything else: send us a message and we'll get back within 7 business days (usually faster).</p>
+<form class="contact-form" data-contact novalidate>
+<div class="row">
+<label>Your name<input name="name" type="text" autocomplete="name" required></label>
+<label>Your email<input name="email" type="email" autocomplete="email" required></label>
+</div>
+<label>Subject<input name="subject" type="text" placeholder="e.g. No engine sound on iPhone 15" required></label>
+<label>Message<textarea name="message" rows="6" placeholder="Tell us what's happening. For bug reports, include your device model and iOS / Android version." required></textarea></label>
+<input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn btn-red" type="submit">Send message</button>
+<p class="muted">Or email <a href="mailto:digiforcebusiness@gmail.com">digiforcebusiness@gmail.com</a> directly.</p>
+<p class="form-status" data-form-status role="status" aria-live="polite"></p>
+</form>
+<h2>What we can help with</h2>
+<ul>
+<li><strong>Bug reports</strong>: engine sounds not playing, GPS speed not detected, dashboard glitches. Tell us your device and OS version.</li>
+<li><strong>Feedback and feature requests</strong>: new cars, new engine packs, dashboard tweaks. We listen.</li>
+<li><strong>Privacy and data requests</strong>: see the <a href="/privacy/">Privacy Policy</a>. SuperRev runs entirely on your device and we hold no personal data on our side, but we'll confirm in writing for any formal request.</li>
+<li><strong>Press and collaborations</strong>: feel free to reach out about features, reviews, or content.</li>
+</ul>
+<h2>Quick troubleshooting</h2>
+<ul>
+<li><strong>No engine sound on iPhone?</strong> Check that the silent / ring switch is off, then turn the media volume up while SuperRev is open.</li>
+<li><strong>No speed-based revs?</strong> The engine note also reacts to motion and the on-screen throttle pedal even without GPS. To enable GPS, go to Settings → SuperRev → Location and choose <em>While Using the App</em>.</li>
+<li><strong>Bluetooth speaker not working?</strong> Pair the speaker first in iOS / Android settings, then launch SuperRev: it uses whatever output the system has selected.</li>
+<li><strong>No sound on this website?</strong> Press Start engine first (browsers only allow audio after a tap or click) and check your device isn't muted.</li>
+</ul>
+</article>
+<script type="module" src="/js/contact.js"></script>`,
+    schemas: [breadcrumbSchema([['Home', '/'], ['Contact', '/contact/']])],
   });
 }
 

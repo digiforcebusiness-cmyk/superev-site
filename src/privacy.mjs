@@ -72,6 +72,7 @@ export const PRIVACY_HTML = `
 <li><strong>Local storage:</strong> none. The 60-second web limit is counted in memory and resets when you reload.</li>
 <li><strong>Hosting logs:</strong> the site is hosted by Vercel, which processes standard request data (such as your IP address, browser type, and the page requested) to deliver and secure the site, under the <a href="https://vercel.com/legal/privacy-policy" rel="noopener">Vercel Privacy Policy</a>.</li>
 <li><strong>Audio decoder:</strong> if your browser cannot play the engine audio format natively, the page downloads an open-source audio decoder from the jsDelivr CDN, which receives standard request data in the same way.</li>
+<li><strong>Contact form:</strong> if you send us a message from the <a href="/contact/">contact page</a>, your name, email address, and message are delivered to our inbox through Web3Forms, a form-to-email service, and are used only to reply to you. You can also email us directly instead.</li>
 <li><strong>Store links:</strong> the App Store and Google Play buttons take you to Apple's and Google's sites, which have their own privacy policies.</li>
 </ul>
 
